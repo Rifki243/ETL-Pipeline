@@ -1,0 +1,13 @@
+# Menjalankan skrip ETL pipeline
+python main.py
+
+# Menjalankan unit test pada folder tests
+python -m unittest discover -s tests
+
+# Menjalankan test coverage pada folder tests
+coverage run -m unittest discover -s tests
+coverage report
+
+# Menampilkan hasil coverage dalam format HTML
+coverage html
+start htmlcov/index.html
