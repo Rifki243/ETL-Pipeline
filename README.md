@@ -42,12 +42,19 @@ open htmlcov/index.html   # Untuk Mac/Linux
 
 ## 📝 Struktur Direktori
 ```bash
-.
-├── htmlcov/              # Output HTML coverage
-├── tests/                # Unit test
-├── utils/                # Folder modul ETL
-├── main.py               # Skrip utama ETL
-├── Products.csv         
+ETL-Pipeline/
+├── htmlcov/                # Output HTML coverage
+├── tests/                  # Unit test
+│   ├── .coverage 
+│   ├── test_extract.py
+│   ├── test_load.py
+│   └── test_transform.py               
+├── utils/                  # Folder modul ETL
+│   ├── extract.py
+│   ├── load.py
+│   └── transform.py 
+├── main.py                 # Skrip utama ETL
+├── Products.csv           
 ├── requirements.txt     
 ├── Submission.txt        
 └── README.md
